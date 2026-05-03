@@ -28,9 +28,16 @@ Frontend (React + Vite) -> HTTP -> Backend (Express) -> SQLite
 | GET | /expenses | получить все расходы |
 | POST | /expenses | добавить расход |
 | DELETE | /expenses/:id | удалить расход |
-| POST | /auth/register | регистрация |
+| POST | /auth/register | регистрация | 
 | POST | /auth/login | вход |
 
+## postman
+![postman-get](image-8.png)
+![postman_get](image-9.png)
+![postman-post](image-6.png)
+![postman-post](image-7.png)
+![postman-delete](image-10.png)
+![postmanupdate](image-11.png)
 ## Запуск
 
 Бекенд
