@@ -1,42 +1,35 @@
 .card {
   background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  padding: 18px 20px;
+  border: 1px solid #ddd;
+  padding: 14px;
 }
 
 .cardTitle {
   font-size: 13px;
   font-weight: 600;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .filterRow {
   display: flex;
   gap: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
 }
 
 .filterChip {
-  padding: 4px 12px;
-  border-radius: 20px;
+  padding: 3px 10px;
   font-size: 12px;
   cursor: pointer;
-  border: 1px solid #e0e0e0;
-  background: transparent;
-  color: #888;
+  border: 1px solid #ddd;
+  background: #fff;
   font-family: inherit;
+  color: #888;
 }
 
-.filterChip:hover {
-  border-color: #D22145;
-  color: #D22145;
-}
-
-.filterChip.active {
+.active {
   background: #D22145;
-  color: white;
+  color: #fff;
   border-color: #D22145;
 }
 
@@ -49,23 +42,17 @@ thead th {
   text-align: left;
   font-size: 11px;
   color: #999;
-  padding: 0 10px 8px;
-  border-bottom: 1px solid #e0e0e0;
-  font-weight: 600;
+  padding: 0 8px 8px;
+  border-bottom: 1px solid #ddd;
 }
 
 tbody tr {
   border-bottom: 1px solid #f0f0f0;
 }
 
-tbody tr:hover {
-  background: #fafafa;
-}
-
 tbody td {
-  padding: 10px;
+  padding: 9px 8px;
   font-size: 13px;
-  color: #1e1e1e;
 }
 
 .tdDate {
@@ -75,8 +62,7 @@ tbody td {
 
 .categoryBadge {
   display: inline-block;
-  padding: 2px 8px;
-  border-radius: 3px;
+  padding: 2px 7px;
   font-size: 11px;
   font-weight: 600;
 }
@@ -91,23 +77,16 @@ tbody td {
   color: #ccc;
   cursor: pointer;
   font-size: 13px;
-  padding: 3px 6px;
-  border-radius: 3px;
-  opacity: 0;
-}
-
-tbody tr:hover .deleteBtn {
-  opacity: 1;
+  padding: 2px 6px;
 }
 
 .deleteBtn:hover {
   color: #D22145;
-  background: #fff0f3;
 }
 
 .emptyState {
+  padding: 30px;
   text-align: center;
-  padding: 40px;
   color: #bbb;
   font-size: 13px;
 }

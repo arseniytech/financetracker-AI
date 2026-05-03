@@ -1,27 +1,26 @@
 .card {
   background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  padding: 18px 20px;
+  border: 1px solid #ddd;
+  padding: 14px;
 }
 
 .cardTitle {
   font-size: 13px;
   font-weight: 600;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .formGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr auto;
-  gap: 10px;
+  gap: 8px;
   align-items: end;
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 
 .field label {
@@ -30,35 +29,21 @@
 }
 
 .field input, .field select {
-  height: 36px;
-  padding: 0 10px;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid #ddd;
   font-size: 13px;
-  background: #f7f7f7;
-  outline: none;
   font-family: inherit;
-  color: #1e1e1e;
-}
-
-.field input:focus, .field select:focus {
-  border-color: #D22145;
-  background: #fff;
+  outline: none;
 }
 
 .btn {
-  height: 36px;
-  padding: 0 16px;
-  border-radius: 5px;
+  height: 34px;
+  padding: 0 14px;
   font-size: 13px;
-  font-weight: 600;
   cursor: pointer;
   border: none;
   font-family: inherit;
   background: #D22145;
   color: white;
-}
-
-.btn:hover {
-  background: #b01a38;
 }
