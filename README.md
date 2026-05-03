@@ -34,13 +34,15 @@ Frontend (React + Vite) -> HTTP -> Backend (Express) -> SQLite
 ## Запуск
 
 Бекенд
+```bash
 cd backend
 npm install
 npm run dev
-
+```
 Фронтенд
+```bash
 npm install
 npm run dev
-
+```
 Фронт: http://localhost:5173  
 Бэк: http://localhost:3000
