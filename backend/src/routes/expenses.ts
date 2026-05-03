@@ -13,11 +13,7 @@ router.post('/', (req, res) => {
   const result = db.prepare('INSERT INTO expenses (amount, description, date, user_id, category_id) VALUES (?, ?, ?, ?, ?)').run(amount, description, date, user_id, category_id);
   res.json({ id: result.lastInsertRowid });
 });
-router.put('/:id', (req, res) => {
-  const { amount, description, date } = req.body;
-  db.prepare('UPDATE expenses SET amount = ?, description = ?, date = ? WHERE id = ?').run(amount, description, date, req.params.id);
-  res.json({ ok: true });
-});
+
 router.delete('/:id', (req, res) => {
   db.prepare('DELETE FROM expenses WHERE id = ?').run(req.params.id);
   res.json({ ok: true });
