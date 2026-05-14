@@ -39,7 +39,7 @@ Frontend (React + Vite) -> HTTP -> Backend (Express) -> SQLite
 ![postman-delete](img\image-10.png)
 ![postman-update](img\image-11.png)
 
-## Запуск
+## Запуск.
 
 Бекенд
 ```bash
