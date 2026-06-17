@@ -84,6 +84,40 @@ tbody td {
   color: #D22145;
 }
 
+.editBtn {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 6px;
+}
+
+.editBtn:hover {
+  color: #333;
+}
+
+.saveBtn {
+  background: none;
+  border: none;
+  color: #2e7d32;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 6px;
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.editInput {
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+}
+
 .emptyState {
   padding: 30px;
   text-align: center;

@@ -43,4 +43,29 @@ db.exec(`
   );
 `);
 
+export const DEFAULT_CATEGORIES = [
+  'Еда',
+  'Транспорт',
+  'Развлечения',
+  'Здоровье',
+  'Одежда',
+  'Прочее',
+];
+
+export function seedCategories(userId: number) {
+  const row = db
+    .prepare('SELECT COUNT(*) as count FROM categories WHERE user_id = ?')
+    .get(userId) as { count: number };
+
+  if (row.count > 0) return;
+
+  const insert = db.prepare('INSERT INTO categories (name, user_id) VALUES (?, ?)');
+  const tx = db.transaction(() => {
+    for (const name of DEFAULT_CATEGORIES) {
+      insert.run(name, userId);
+    }
+  });
+  tx();
+}
+
 export default db;

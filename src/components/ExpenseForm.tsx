@@ -15,9 +15,16 @@ export const ExpenseForm = () => {
         </div>
         <div className={styles.field}>
           <label>Категория</label>
-          <select value={category} onChange={(e) => setCategory(e.target.value)}>
-            {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
-          </select>
+          <select
+  value={category}
+  onChange={(e) => setCategory(Number(e.target.value))}
+>
+  {CATEGORIES.map((c) => (
+    <option key={c.id} value={c.id}>
+      {c.name}
+    </option>
+  ))}
+</select>
         </div>
         <div className={styles.field}>
           <label>Описание</label>

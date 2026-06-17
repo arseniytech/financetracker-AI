@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useExpenseStore } from '../store/expenseStore';
+import { useExpenseStore, CATEGORIES } from '../store/expenseStore';
 
 export const useExpenseForm = () => {
   const addExpense = useExpenseStore((s) => s.addExpense);
   const [amount, setAmount] = useState('');
-  const [category, setCategory] = useState('Еда');
+  const [category, setCategory] = useState<number>(1);
   const [description, setDescription] = useState('');
   const [date, setDate] = useState('');
 
@@ -12,7 +12,7 @@ export const useExpenseForm = () => {
     addExpense({
       id: Date.now(),
       amount: Number(amount),
-      category,
+      category: CATEGORIES.find((c) => c.id === category)?.name ?? 'Прочее',
       description,
       date,
     });
